@@ -64,7 +64,7 @@ header#one-menu {
 }
 .nav-link {
   border-top: none;
- /* border-bottom: 3px solid #F2F2F2;*/
+  border-bottom: 3px solid #F2F2F2;
   width: 50%;
 }
 .nav-link:hover {
@@ -128,6 +128,12 @@ header#one-menu {
   margin-bottom: 1rem;
   margin-right: 2rem;
   font-weight: bold;
+  cursor: pointer;
+
+}
+
+.filtre-search:hover{
+  background-color:#deebff;
 }
 
 .all-filters {
@@ -534,7 +540,7 @@ footer {
 
 @media (min-width:601px){
   .search-icon1{
-    display: none;
+    display: none !important;
   }
 }
 
