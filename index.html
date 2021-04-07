@@ -4,26 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
-    <script src="https://kit.fontawesome.com/959b0d94ef.js" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />-->
+    <!--<script src="https://kit.fontawesome.com/959b0d94ef.js" crossorigin="anonymous"></script>-->
     <title>Resevia</title>
 </head>
 
 <body>
 
+    <header id="one-menu">
+        <img class="header-logo" src="images/logo/Reservia.svg" alt="Logo de Reservia" />
+        <nav class="header-nav">
+            <a class="nav-link" href="#hotels">Hebergements</a>
+            <a class="nav-link" href="#activities">Activités</a>
+        </nav>
 
-    <div class="wrapper">
-        <header id="one-menu">
-            <img class="header-logo" src="images/logo/Reservia@3x.png" alt="Logo de Reservia" />
-            <nav class="header-nav">
-                <a class="nav-link" href="#one">Hebergements</a>
-                <a class="nav-link" href="#two">Activités</a>
-            </nav>
+        <a class="signup" href="#">S'inscrire</a>
 
-            <a class="signup" href="#">S'inscrire</a>
+    </header>
 
-        </header>
+    <main class="main">
+       
 
 
         <div id="bloc-rech-filtr">
@@ -33,7 +35,7 @@
                 <div class="search-icon-search">
                     <i class="fas fa-map-marker-alt shearch-icon"></i>
                 </div>
-                <input class="form-input" type="search" placeholder="Marseille, France" name="the_search">
+                <input class="form-input" type="search" placeholder="Marseille, France" size="1" name="the_search">
                 <button type="submit">
                     <span class="search-text">Rechercher</span>
                     <i class="search-icon1 fas fa-search"></i>
@@ -76,16 +78,15 @@
                 </div>
                 <p> Plus de 500 logements sonts disponibles dans cette ville</p>
             </div>
+        </div>
 
-            <section class="one" id="one">
+            <section class="hotels_hebergements" id="hotels">
 
-                <div class="super-cont">
-                    <header class="heberg-header">
-                        <h1 class="title-heberg">Hébergements à Marseille</h1>
-                    </header>
+                <article class="hebergements">
+                    
+                        <h2 class="title-heberg">Hébergements à Marseille</h2>
 
-
-                    <div class="heberg">
+                    <div class="hebergement_card">
                         <figure class="contained-img-heberg">
                             <img class="img-room-1"
                                 src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt>
@@ -103,7 +104,7 @@
                         </div>
                     </div>
 
-                    <div class="heberg">
+                    <div class="hebergement_card">
                         <figure class="contained-img-heberg">
                             <img class="img-room-1"
                                 src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
@@ -123,7 +124,7 @@
 
                     </div>
 
-                    <div class="heberg">
+                    <div class="hebergement_card">
                         <figure class="contained-img-heberg">
                             <img class="img-room-1"
                                 src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
@@ -143,7 +144,7 @@
 
                     </div>
 
-                    <div class="heberg">
+                    <div class="hebergement_card">
                         <figure class="contained-img-heberg">
                             <img class="img-room-1"
                                 src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
@@ -163,7 +164,7 @@
 
                     </div>
 
-                    <div class="heberg">
+                    <div class="hebergement_card">
                         <figure class="contained-img-heberg">
                             <img class="img-room-1"
                                 src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
@@ -183,7 +184,7 @@
 
                     </div>
 
-                    <div class="heberg">
+                    <div class="hebergement_card">
                         <figure class="contained-img-heberg">
                             <img class="img-room-1"
                                 src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
@@ -204,14 +205,14 @@
                     </div>
                     
                     <p class="display-heberg">Affichez plus</p>
-                </div>
+                </article>
 
 
                 <aside>
-                    <h1 class="title-pop">
+                    <h2 class="title-pop">
                         Les plus populaires
                         <i class="fas fa-chart-line"></i>
-                    </h1>
+                    </h2>
                     <div class="popul">
 
                         <div class="images-pop">
@@ -282,9 +283,9 @@
             </section>
 
 
-            <section class="two" id="two">
+            <section class="activities_marseille" id="activities">
 
-                <h1 class="activity-title">Activités à Marseille</h1>
+                <h2 class="activity-title">Activités à Marseille</h2>
 
                 <a href="#" class="cont-activity cont-activity1">
                     <div class="activity">
@@ -337,8 +338,8 @@
             </section>
 
 
-        </div>
-    </div>
+    </main>
+
 
     <!--Start of the footer-->
     <footer>
